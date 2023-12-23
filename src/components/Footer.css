@@ -1,0 +1,19 @@
+.footer {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer p {
+    font-size: 1em;
+  }
+}

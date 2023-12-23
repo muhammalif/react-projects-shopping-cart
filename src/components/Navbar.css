@@ -1,0 +1,63 @@
+.navbar {
+  background-color: rgb(3, 51, 139);
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Tambahkan CSS untuk menu hamburger pada layar kecil (< 600px) */
+@media only screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Sesuaikan dengan tinggi navbar Anda */
+    left: 0;
+    right: 0;
+    background-color: rgb(3, 51, 139);
+    text-align: center;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .links a {
+    margin: 10px 0;
+  }
+}

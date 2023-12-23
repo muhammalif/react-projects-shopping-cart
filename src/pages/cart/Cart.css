@@ -1,0 +1,131 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* min-height: 100vh; */
+}
+
+.cart h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cartItem {
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.cartItem img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.description p {
+  font-size: 1em;
+}
+
+.countHandler {
+  display: flex;
+  align-items: center;
+}
+
+.countHandler button {
+  background-color: rgb(3, 51, 139);
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.countHandler button:hover {
+  background-color: rgb(19, 19, 19);
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 10px;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.checkout button {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  background-color: rgb(3, 51, 139);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checkout button:hover {
+  background-color: rgb(19, 19, 19);
+}
+
+/* Responsive for screens less than 600px */
+@media only screen and (max-width: 600px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cartItem img {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .countHandler {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .countHandler button {
+    margin-top: 10px;
+  }
+}
+
+/* Responsive for screens less than 400px */
+@media only screen and (max-width: 400px) {
+  .cartItem {
+    padding: 10px;
+  }
+
+  .description p {
+    font-size: 0.9em;
+  }
+
+  .countHandler button {
+    padding: 8px 10px;
+  }
+}

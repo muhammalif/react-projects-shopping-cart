@@ -1,0 +1,75 @@
+.checkout-page {
+  max-width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.payment-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.checkout-button {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checkout-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive for screens less than 600px */
+@media only screen and (max-width: 600px) {
+  label {
+    font-size: 1em;
+  }
+
+  select,
+  input {
+    font-size: 0.9em;
+  }
+
+  .checkout-button {
+    font-size: 1em;
+  }
+}
+
+/* Responsive for screens less than 400px */
+@media only screen and (max-width: 400px) {
+  label {
+    font-size: 0.8em;
+  }
+
+  select,
+  input {
+    font-size: 0.8em;
+  }
+
+  .checkout-button {
+    font-size: 0.9em;
+  }
+}
